@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    --red: #cb4154;
+    --white:#fff;
+    --brown:#4d1c21;
+    --goldern:#b69d74;
+    --black:#1c1c1c;
+  
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+.glbl-btn{
+    background-color: var(--goldern);
+    padding: 11px 45px;
+    color: var(--white);
+    font-size: 17px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.glbl-btn:hover{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--white);
+}
+.hd-span{
+    color: #b69d74;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 2px solid #b69d74;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.margin-top{
+    margin-top: 45px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* header */
+header {
+    padding: 15px 0;
+    width: 100%;
+    float: left;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #504b4b70;
+    z-index: 99;
+}
+header ul.menu {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+header ul.menu li {
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+}
+header ul.menu li a{
+    color: var(--black);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+header ul.menu li a:hover{
+    color: var(--goldern);
+    border-bottom: 1px solid var(--goldern);
+    padding-bottom: 3px;
+}
+header .logo img {
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: 3px;
+    width: 85%;
+}
+section{
+    margin-bottom: 70px 0;
+}
+.pd-70{
+    padding: 70px 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+     color: #333333;
+}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+h2{
+    font-size: 35px;
+    font-weight: 700;
+   
+}
+/* banner */
+.banner{
+    width: 100%;
+    float: left;
+    background-image: url(../img/banner.jpg);
+    padding-top: 150px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+}
+.banner h1 {
+    font-size: 55px;
+    color: var(--white);
+    font-weight: 700;
+}
+.banner h1 span{
+    color: var(--goldern);
+}
+.banner p{
+    color: var(--white);
+}
+.banner .container {
+    display: flex;
+    align-items: center;
+}
+
+/* about us */
+.aboutus{
+    width: 100%;
+    float: left;
+    background-image: url('../img/lawtaraju.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-attachment: fixed;
+}
+.aboutus .right{
+    padding-left: 70px;
+   
+}
+
+.aboutus .right  .hight-btn{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.aboutus .right  .hight-btn .fa{
+    color: var(--goldern);
+    font-size: 20px;
+    font-size: 17px;
+}
+.aboutus .right  .hight-btn span {
+    font-weight: 500;
+    color: #000;
+}
+
+/* our expertise */
+.our-expertise{
+    background-color: var(--black);
+    width: 100%;
+    float: left;
+}
+.our-expertise h2{
+    color: var(--white);
+}
+.our-expertise .expertise-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #32312f;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 100%;
+}
+.our-expertise .expertise-icon img{
+    width: 56px;
+    height: auto;
+}
+.our-expertise .right h3{
+    color: var(--white);
+}
+.our-expertise .right{
+    color: var(--white);
+}
+.our-expertise h2{
+    margin-bottom: 50px;
+}
+.our-expertise .right img{
+    margin-left: 40px;
+}
+
+/* services */
+.services{
+    width: 100%;
+    float: left;
+ 
+    background: url(../img/serviceback.png) left bottom no-repeat, url(../img/servicebacktwo.png) right bottom no-repeat;
+    background-attachment: fixed;
+}
+.services .heading h2 span{
+    color: var(--goldern);
+}
+/* .services .box {
+  background-color: var(--goldern);
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+} */
+/* .services .box:hover{
+    background-color: var(--black);
+}
+ */
+.services h2{
+    margin-bottom: 50px;
+}
+.services .glbl-btn{
+    text-align: center;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 270px;
+    height: 200px;
+    cursor: pointer;
+    border: none;
+    perspective: 1000px;
+    margin: 8px;
+}
+  .flip-box h5{
+    margin-top: 5px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: var(--goldern);
+    color: black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: var(--black);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  .services .flip-box  h5{
+    color: var(--white);
+    line-height: 35px;
+    font-size: 23px;
+}
+/* contact us */
+.contact{
+    width: 100%;
+    float: left;
+    background:linear-gradient(rgba(28,28,28,11),rgba(28,28,28,11)),url(../img/serviceback.png) left bottom no-repeat, url(../img/contactback.png) right bottom no-repeat;
+    background-attachment: fixed;
+}
+.contact .heading{
+    margin-bottom: 40px;
+}
+.contact .heading h2{
+    color: var(--white);
+}
+ form{
+    background-color: transparent;
+    border: 5px solid var(--goldern);
+    border-radius: 10px;
+    padding: 25px;
+}
+ form .form-group {
+    margin-bottom: 20px;
+}
+ form .form-control {
+    display: block;
+
+    height: 42px;
+
+}
+ form .form-group label {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.form-control:focus{
+    border-color: transparent;
+    outline: 0;
+    box-shadow: unset;
+}
+form button.glbl-btn {
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+}
+form textarea{
+    width: 100%;
+}
+.contact .right img{
+    margin-left: 40px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    float: left;
+    padding: 40px 0 50px;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/contact.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+footer .box{
+    text-align: center;
+    padding: 15px;
+    color: var(--white);
+}
+footer .box img {
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+footer .box strong {
+    font-weight: bolder;
+    font-size: 21px;
+    display: inline-block;
+    margin: 6px;
+}
+.copyright{
+    width: 100%;
+    float: left;
+    background-color:var(--goldern);
+    padding: 12px;
+    color: var(--white);
+    text-align: center;
+}
+.copyright p{
+    margin: 0;
+}
+
+
+/* model css */
+#exampleModal .modal-content{
+    background-color: #000;
+}
+#exampleModal .modal-content form{
+    border: unset;
+}
+#exampleModal .modal-content .modal-header{
+    text-align: center;
+    display: block;
+}
+#exampleModal .modal-content .modal-header h5{
+    color: var(--white);
+    font-weight: 700;
+}
+#exampleModal .modal-content .modal-header .btn-close {
+     opacity: 1;
+    border-radius: 100%;
+    background-color: #fff;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    right: -5px;
+    top: -6px;
+}
+#exampleModal .modal-content .modal-header .btn-close:focus {
+    outline: 0;
+    box-shadow: unset;
+    opacity: 1;
+}
+form textarea{
+    border-radius: 5px;
+}
+
+
+/* .main-glblbtn {
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 75%;
+    transform: rotate(90deg);
+}
+.mainglbl-btn{
+    width: 100%;
+    float: left;
+    background-color: #cb4154;
+} */
+@media(max-width:575px){
+    .pd-70 {
+        padding: 45px 0;
+    }
+    .mb-5 {
+
+        margin-bottom: 8px !important;
+    }
+    header .logo img{
+        width: 100%;
+    }
+    header .glbl-btn{
+        display: none;
+    }
+    header ul.menu {
+        left: 0;
+    top: 0;
+    height: 300px;
+    padding: 30px;
+    position: absolute;
+    background: #000;
+    right: 0;
+    display: none;
+    }
+    header ul.menu li {
+        display: block;
+        line-height: 40px;
+    }
+    header ul.menu li a{
+        color: var(--white);
+    }
+    header i.fa.fa-bars {
+        font-size: 25px;
+        color: #4e1c22;
+    }
+    .glbl-btn {
+        padding: 11px 25px;
+        font-size: 14px;
+    }
+    header i.fa.fa-times {
+        font-size: 30px;
+        color: #fff;
+        top: 20px;
+        right: 20px;
+        position: absolute;
+
+    }
+    .contact .right img{
+        margin-left: 0px;
+    }
+    .banner h1 {
+        font-size: 28px;
+        color: var(--white);
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .banner .left{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .banner .book-app{
+        display: none;
+    }
+    form {
+ 
+        padding: 20px;
+    }  
+    form .form-control {
+        height: 35px;
+    }
+    form .form-group {
+        margin-bottom: 10px;
+    }
+    form textarea{
+        width: 100%;
+        height: 100px;
+    }
+    .aboutus .left{
+        text-align: center;
+    }
+    .aboutus .left img{
+        width: 80%;
+    }
+    .aboutus .right {
+        padding-left: 10px;
+        text-align: center;
+        margin-top: 25px;
+
+    }
+    .our-expertise {
+        text-align: center;
+    }
+    .our-expertise .expertise-icon {
+        margin: auto auto 14px;
+    }
+    .flip-box {
+        width: 250px;
+        height: 180px;
+        margin: 8px;
+        margin: auto auto 15px;
+    }
+    .services .flip-box h5 {
+        margin-top: 10px;
+        line-height: 27px;
+        font-size: 20px;
+    }
+  .our-expertise .left-box {
+        margin-bottom: 20px;
+    }
+    .our-expertise .right-box{
+        text-align: center;
+    }
+    .our-expertise .right-box img{
+        width: 80%;
+    }
+    .contact .right {
+        margin-top: 25px;
+        text-align: center;
+    }
+    .contact .right img{
+        width: 80%;
+
+    }
+
+}
